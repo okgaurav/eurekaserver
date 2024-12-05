@@ -27,3 +27,5 @@ management:
 logging:
   level:
     org.springframework.cloud.netflix.eureka: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
