@@ -18,8 +18,9 @@ management:
     env:
       enabled: true
   endpoint:
-    shutdown:
-      enabled: true
+    health:
+      probes:
+        enabled: true
   metrics:
     tags:
       application: ${spring.application.name}
